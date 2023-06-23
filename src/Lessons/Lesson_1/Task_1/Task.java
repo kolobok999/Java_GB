@@ -15,7 +15,8 @@ public class Task {
         int hour = now.get(Calendar.HOUR_OF_DAY);
         System.out.println(hour);
 
-        if (hour > 23 && hour < 5) {
+
+        if (hour == 23 || hour < 5) {
             System.out.printf("Доброй ночи, %s!\n", name);
         } else if (hour < 12) {
             System.out.printf("Доброй утро, %s!\n", name);

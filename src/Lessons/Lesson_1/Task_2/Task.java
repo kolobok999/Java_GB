@@ -15,8 +15,8 @@ public class Task {
     int getMaxStreak(int[] array) {
         int count = 0;
         int maxCount = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == 1) {
+        for (int el : array) {
+            if (el == 1) {
                 count++;
             } else {
                 if (maxCount < count) {

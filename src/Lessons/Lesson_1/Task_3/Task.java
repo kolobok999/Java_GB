@@ -20,15 +20,14 @@ public class Task {
             }
         }
 
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+        for (int j : array) {
+            System.out.print(j + " ");
         }
     }
 
-    private int [] swap(int [] arr, int x, int y) {
+    private void swap(int [] arr, int x, int y) {
         int temp = arr[x];
         arr[x] = arr[y];
         arr[y] = temp;
-        return arr;
     }
 }
