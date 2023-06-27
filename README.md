@@ -1,2 +1,2 @@
-# Learn Java на Geek Brains
+# Learning Java on Geek Brains
 
