@@ -12,8 +12,8 @@ public class Task {
 
     private void go() {
         String req = "select * from students where";
-//        String[] filter = {"name:Ivanov", "country:Russia", "city:Moscow", "age:null"};
-        String[] filter = {"name:null", "country:null", "city:null", "age:null"};
+        String[] filter = {"name:Ivanov", "country:Russia", "city:Moscow", "age:null"};
+//        String[] filter = {"name:null", "country:null", "city:null", "age:null"};
         System.out.println(getRequest(req, filter));
     }
 
@@ -23,7 +23,7 @@ public class Task {
         for (String item : filter) {
             String[] str = item.split(":");
             if (!str[1].equals("null")) {
-                sb.append(" ").append(str[0]).append(" = ").append("'").append(str[1]).append("' ").append(" AND ");
+                sb.append(" ").append(str[0]).append(" = '").append(str[1]).append("'  AND ");
             }
         }
         return sb.substring(0, sb.length()-6);

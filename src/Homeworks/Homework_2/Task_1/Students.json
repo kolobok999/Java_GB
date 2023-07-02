@@ -1,0 +1,7 @@
+[{"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"},
+  {"name": "null", "country": "Belarus", "city":"Minsk", "age":"18"},
+  {"name": "Petrov", "country": "null", "city":"Brest", "age":"17"},
+  {"name": "null", "country": "null", "city":"null", "age":"17"},
+  {"name": "Sidorov", "country": "null", "city":"null", "age":"20"},
+  {"name": "null", "country": "null", "city":"Moscow", "age":"20"},
+  {"name": "null", "country": "null", "city":"null", "age":"null"}]
