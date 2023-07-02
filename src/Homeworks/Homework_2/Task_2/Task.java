@@ -52,10 +52,9 @@ public class Task {
         }
     }
 
-    private int[] swap(int []arr, int x, int y) {
+    private void swap(int []arr, int x, int y) {
         int tmp = arr[x];
         arr[x] = arr[y];
         arr[y] = tmp;
-        return arr;
     }
 }
