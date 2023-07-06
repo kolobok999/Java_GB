@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 
 //В консоли запросить имя пользователя. В зависимости от
@@ -9,10 +10,14 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-
+        Main main = new Main();
+        main.go();
     }
 
     void go(){
-        System.out.println("Hello");
+        String pathProject = System.getProperty("user.dir");
+        String pathFile = pathProject.concat("/file.txt");
+        File f3 = new File(pathFile);
+        System.out.println(f3.getAbsoluteFile());
     }
 }
